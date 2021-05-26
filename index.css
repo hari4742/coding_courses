@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    background-attachment: scroll;
+    background-color: #330033;
+    font-family: "Londrina Solid";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+/* Top Navigational Bar */
+nav{
+    margin: 0px;
+    position: fixed;
+    padding: 5px;
+    width: 100%;
+    color: white;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 50px;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 4;
+}
+/* Right Content Bar*/
+.contents{
+    display: flex;
+    position: fixed;
+    width: 5%;
+    height: 85.4vh;
+    flex-direction: column;
+    right:0px;
+    bottom:0px;
+    transition: width 0.4s;
+    padding:10px;
+    gap:20px;
+    z-index: 5;
+    white-space: nowrap;
+}
+/* Icons for content Bar */
+.web_nav::before{
+    content: url(icons_pics/web_nav.png);
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;
+}
+.cont_nav::before{
+    content: url(icons_pics/code.png);
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;
+}
+.prog_nav::before{
+    content: url(icons_pics/prog_nav.png);
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;
+}
+.app_nav::before{
+    content: url(icons_pics/app_nav.png);
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;
+}
+.contents:hover {
+    background-color: #30336b;
+    z-index: 5;
+    width:30%;
+    font-size: 45px;
+    height:100vh;
+}
+/* Login Button */
+.login{
+    position: relative;
+    right:20px;
+    padding:3px;
+    font-size: 40px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.login::before{
+    content: url(icons_pics/login_logo.png);
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;  
+}
+.home_text p{
+    position: relative;
+    color: whitesmoke;
+    font-size: 200px;
+    font-family: "Mountains of Christmas";
+    transform:translate(35%,40%);
+    text-shadow: 5px 5px rgb(139, 79, 79);
+}
+.world{
+    position: relative;
+    top: -100px;
+    left: 200px;
+}
+.home{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+article{
+    width: 90%;
+    margin:auto;
+    margin: 1%;
+    text-align: center;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 64px;
+}
+.web{
+    text-shadow: 3px 3px 2px rgb(0,0,0);
+}
+.web::before{
+    content: url(icons_pics/browser.png); 
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;  
+}
+.logo{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,1),-2px -2px 5px rgba(0,0,0,0.2);
+    display: inline-block;
+    width:30%;
+    padding: 5px;
+    box-shadow: rgba(0,0,0,0.5);
+}
+.logo img{
+    width:100%;
+}
+.content{
+    font-size: 25px;
+}
+.prog{
+    text-shadow: 3px 3px 2px rgb(0,0,0);
+}
+.prog::before{
+    content:url(icons_pics/coding.png);
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;
+}
+.app::before{
+    content: url(icons_pics/app_logo.png); 
+    padding: 10px 10px 10px 0px;
+    vertical-align: middle;  
+}
+.app{
+    text-shadow: 3px 3px 2px rgb(0,0,0);
+    margin: 5px;
+}
+#ref{
+    width: 89%;
+    margin:auto;
+    margin: 1%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 25px;
+    line-height: 35px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,1);
+}
+.ref::before{
+    content: url(icons_pics/ref_logo.png);
+    vertical-align: middle;
+    padding: 10px;
+}
+#ref a{
+    text-decoration: underline;
+}
+li{
+    list-style: none;
+}
+#about{
+    width: 91.5%;
+    box-sizing: border-box;
+    margin:auto;
+    margin: 1%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 40px;
+    font-size: 25px;
+    line-height: 35px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,1);
+}
+.abt::before{
+    content: url(icons_pics/about_logo.png);
+    vertical-align: middle;
+    padding: 10px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:auto;
+    margin: 1%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding:13px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,1);
+    align-items: flex-end;
+    gap:5px;
+    font-size: 30px;
+}
+#ctme{
+    align-self: center;
+    font-size: 50px;
+}
+#ctme::before{
+    content: url(icons_pics/contact_logo.png);
+    padding: 10px;
+    vertical-align: middle;
+}
+#sololearn::before{
+    content: url(icons_pics/sololearn_logo.png);
+    padding: 10px;
+    vertical-align: middle;
+}
+#mail::before{
+    content: url(icons_pics/gmail_logo.png);
+    padding: 10px;
+    vertical-align: middle;
+}
+#wa::before{
+    content: url(icons_pics/wa_logo.png);
+    padding: 10px;
+    vertical-align: middle;
+}
+#github::before{
+    content: url(icons_pics/github_logo.png);
+    padding: 10px;
+    vertical-align: middle;
+}
+a:hover{
+    color:rgb(153, 151, 151);
+}
+
+/* animation for orange */
+.home_bg_orange{
+    position:absolute;
+    background-color: #ffaf40;
+    height:800px;
+    width:800px;
+    border-radius: 50%;
+    top:-190px;
+    left:-360px;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.36, 1.55);
+    animation-fill-mode: both;
+    box-shadow: 5px 2px 5px rgba(10, 5, 5, 0.705);
+}
+@keyframes ball {
+    0%{
+        position:absolute;
+        top:-100px;
+        width:130%;
+        height: 150vh;
+        border-radius: 50%;
+        
+    }
+    
+}
