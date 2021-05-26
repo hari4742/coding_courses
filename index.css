@@ -92,6 +92,9 @@ nav{
     transform:translate(35%,40%);
     text-shadow: 5px 5px rgb(139, 79, 79);
 }
+.mobile{
+    display:none;
+}
 .world{
     position: relative;
     top: -100px;
@@ -266,4 +269,92 @@ a:hover{
         
     }
     
+}
+@media screen and (max-width: 500px) {
+    .navi{
+        font-size: 20px;
+        height:30px;
+        gap:30px;
+        background-color: rgba(255,255,255,0.5);
+
+    }
+    .login{
+        font-size: medium;
+    }
+    .home_bg_orange{
+        display:none;
+    }
+    .logo{
+        display: block;
+        width:80%;
+        margin:auto;
+        margin:4%;
+        margin-bottom: 10px;
+    }
+    .home_text p{
+        font-size: 100px;
+        position:relative;
+        top:40px;
+        transform: translate(10%);
+    }
+    .mobile{
+        display:block;
+        position:relative;
+        top: 110px;
+        font-size: 1.5em;
+        margin: 10%;
+    }
+    .hello{
+        font-size: medium;
+    }
+    .world{
+        font-size: medium;
+        position: relative;
+        top:5px;
+        left: 100px;
+    }
+    header p{
+        position: relative;
+        top: 100px;
+    }
+    .contents{
+        width:12.5%;
+        height: 90vh;
+    }
+    .contents:hover{
+        width:80%;
+    }
+    .content{
+        font-size: 20px;
+    }
+    .web {
+        font-size: 50px;
+    }
+    .prog{
+        font-size: 50px;
+    }
+    .app{
+        font-size: 50px;
+    }
+    #ref{
+        display: block;
+        width:70%;
+        margin:auto;
+        margin:4%;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    #about{
+        display: block;
+        width:75%;
+        margin:auto;
+        margin:4%;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    #contact{
+        width:70%;
+        margin:4%;
+        font-size: 20px;
+    }
 }
