@@ -272,14 +272,31 @@ a:hover{
 }
 @media screen and (max-width: 500px) {
     .navi{
-        font-size: 20px;
-        height:30px;
-        gap:30px;
+        padding-top: 4%;
+        font-size: 0.7em;
+        height:2em;
+        gap:2em;
         background-color: rgba(255,255,255,0.5);
 
     }
+    .mobile{
+        display:block;
+        position:relative;
+        top: 50%;
+        font-size: 1.5em;
+        margin: 10%;
+    }
+    .code{
+        font-size: 1.4em !important;
+        position:relative;
+        left:-20px;
+        top: 9em;
+    }
     .login{
-        font-size: medium;
+        font-size: 0.9em;
+    }
+    .login:before{
+        display:none;
     }
     .home_bg_orange{
         display:none;
@@ -292,17 +309,11 @@ a:hover{
         margin-bottom: 10px;
     }
     .home_text p{
-        font-size: 100px;
+        font-size: 6em;
         position:relative;
-        top:40px;
+        top: 1em;
+        left:-20px;
         transform: translate(10%);
-    }
-    .mobile{
-        display:block;
-        position:relative;
-        top: 110px;
-        font-size: 1.5em;
-        margin: 10%;
     }
     .hello{
         font-size: medium;
@@ -318,23 +329,24 @@ a:hover{
         top: 100px;
     }
     .contents{
-        width:12.5%;
+        width:10%;
         height: 90vh;
     }
     .contents:hover{
         width:80%;
+        font-size: 1.2em;
     }
     .content{
-        font-size: 20px;
+        font-size: 0.3em;
     }
     .web {
-        font-size: 50px;
+        font-size: 0.6em;
     }
     .prog{
-        font-size: 50px;
+        font-size: 0.6em;
     }
     .app{
-        font-size: 50px;
+        font-size: 0.6em;
     }
     #ref{
         display: block;
@@ -342,19 +354,30 @@ a:hover{
         margin:auto;
         margin:4%;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 0.67em;
+        line-height: 2em;
     }
     #about{
         display: block;
         width:75%;
         margin:auto;
         margin:4%;
+        line-height: 2em;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 0.6em;
     }
     #contact{
         width:70%;
         margin:4%;
-        font-size: 20px;
+        font-size: 0.67em;
+    }
+    #ctme{
+        font-size: 2.5em;
+    }
+    .abt{
+        font-size: 3em !important;
+    }
+    .ref{
+        font-size: 2.5em !important;
     }
 }
